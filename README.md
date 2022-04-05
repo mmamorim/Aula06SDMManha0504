@@ -38,7 +38,7 @@
 
     `npm install config`
 
-    _Para usar, crie uma pasta chamada config e dentro desta pasta iremos criar um arquivo chamado_
+    _Para usar, crie uma pasta chamada `config` e dentro desta pasta iremos criar um arquivo chamado_
 
     `default.json`
 
