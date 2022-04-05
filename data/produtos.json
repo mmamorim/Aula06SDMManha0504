@@ -1,0 +1,22 @@
+{
+  "produtos": {
+    "P-01": {
+      "id": "BAN-01",
+      "name": "Iron Maiden",
+      "country": "UK",
+      "style": "Metal"
+    },
+    "P-02": {
+      "id": "BAN-02",
+      "name": "ACDC",
+      "country": "Australian",
+      "style": "Metal"
+    },
+    "P-03": {
+      "id": "BAN-03",
+      "name": "Raul Seixas",
+      "country": "Brazil",
+      "style": "Rock"
+    }
+  }
+}

@@ -63,7 +63,9 @@
 
     `npm install body-parser`
 
-9. Se você quiser, em vez de rodar nodemon server.js....vc pode rodar o servidor via script com npm. Para isso, adicione o trecho abaixo no package.json
+9. Se você quiser, em vez de rodar nodemon server.js....vc pode rodar o servidor via script com npm.
+
+    Para isso, adicione o trecho abaixo no package.json
 
     ~~~javascript 
     "scripts": {
@@ -72,7 +74,21 @@
     },
     ~~~
 
-10. Vamos criar uma estrutura de pastas para organizar nossa API:
+10. Vamos codificar a inicialização do servidor usando o express:
+
+    ~~~javascript 
+    const express = require("express"); 
+
+    const app = express();
+    app.use(express.urlencoded({ extended: true }));
+    let port = config.get("server.port");
+
+    app.listen(port,function() {
+        console.log("Servidor iniciado e escutando na porta "+port);
+    });
+    ~~~
+
+11. Vamos criar uma estrutura de pastas para organizar nossa API:
 
     ~~~javascript
     ./controllers/ => Contém todos controladores da api.
@@ -80,4 +96,4 @@
     ./routes/ => Contém as rotas da api.
     ~~~
 
-11. Vamos criar nosso mock de bandas de rock!
+12. Vamos criar nosso mock de bandas de rock!
