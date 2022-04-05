@@ -10,7 +10,7 @@
 
     exemplo para clonar este repositório:
 
-    `git clone https://github.com/mmamorim/Aula05SDMNoite0404.git`
+    `git clone https://github.com/mmamorim/Aula06SDMManha0504.git`
 
 2. Abrir a pasta com o VSCode
 
@@ -37,6 +37,22 @@
     _Podemos criar variáveis de ambiente em um arquivo separado chamado config.json. O pacote config nos permite organizar a configuração da nossa aplicação e usar no nosso projeto._
 
     `npm install config`
+
+    _Para usar, crie uma pasta chamada config e dentro desta pasta iremos criar um arquivo chamado_
+
+    `default.json`
+
+    _neste arquivo adicionamos um objeto de configuração:_
+
+    ~~~json 
+    {
+        "server": {
+            "port": 4000,
+            "path_root": "/api/v1/"
+        }
+    }
+    ~~~
+
 
 7. Vamos instalar nosso amigo **express**
 
